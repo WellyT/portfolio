@@ -14,6 +14,7 @@
 }
 body{
     background-color: var(--body-bg-color);
+    overflow-x: none;
 }
 .card{
     background-color: var(--bg-cards);
@@ -28,7 +29,21 @@ h2{
     margin-bottom: 5px;
 }
 main{
+    display: grid;
+    grid-template-areas: "1fr 2fr" ;
+    height: 100vh;
+    margin-inline: auto;
+    
     padding: 40px;
+    gap: 30px;
+}
+
+.left-side{
+    height: auto;
+}
+.right-side{
+    width: 800px;
+    height: 400px;
 }
 /* =================== PORTFOLIO =================== */
 .portfolio{
@@ -59,7 +74,6 @@ h1{
     font-weight: 300;
 
 }
-
 /* ===================== LINKS ======================= */
 
 .links{
@@ -113,7 +127,6 @@ p{
 
     margin: 7.5px;
 }
-
 /* =============== EXPERIENCES ============== */
 
 .experiences{
@@ -130,7 +143,6 @@ ul{
 li{
     margin-top: 15px;
 }
-
 /* =============== Education ================= */
 
 .education{
@@ -143,12 +155,11 @@ li{
     font-size: 12px;
     font-weight: 300;
 }
-
-/* ================================================ */
+/* ======================= PROJECT ======================== */
 
 .myProjects,
 .recentPosts{
-    width: 952px;
+    width: 65%px;
     height: 86px;
 
     display: flex;
@@ -167,8 +178,7 @@ a{
 a:hover{
     color: #6a648b;
 }
-
-/* ======================= PROJECT ========================= */
+/* ======================= PROJECTS ========================= */
 
 .projects{
     display: flex;
@@ -182,6 +192,11 @@ a:hover{
     
 }
 h4{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 22px;
@@ -193,8 +208,9 @@ h4{
 
 }
 .description{
-    margin-bottom: 47px;
+    margin-bottom: 15px;
 }
+
 .project .group{
     display: flex;
     flex-direction: row;
@@ -205,11 +221,4 @@ h4{
 }
 .row-group{
     margin: 8px;
-}
-
-/* =================== FOOTER ===================== */
-
-footer{
-    text-align: center;
-    margin-bottom: 20px;
 }
